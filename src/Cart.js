@@ -7,9 +7,10 @@ function StripedRowExample() {
     <Table striped bordered hover size="sm"> 
       <thead>
         <tr>
-          <th>No</th>
+          <th>Qty</th>
           <th>Item</th>
           <th>Price</th>
+          
         </tr>
       </thead>
       <tbody>
@@ -17,11 +18,13 @@ function StripedRowExample() {
           <td>1</td>
           <td>Mark</td>
           <td>Otto</td>
+          
         </tr>
         <tr>
           <td>2</td>
           <td>Jacob</td>
           <td>Thornton</td>
+          
         </tr>
       </tbody>
     </Table>
