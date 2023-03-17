@@ -8,11 +8,13 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import React from 'react';
 import data from './data';
 import Cart from './Cart';
+import Titlecart from './Titlecart';
 
 function GroupExample () {
   
   return (
     <div>
+      <Titlecart/>
       <CardGroup>
       <Card>
         <Card.Img variant="top" src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600" />
