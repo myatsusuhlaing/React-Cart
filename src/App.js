@@ -7,18 +7,19 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import React from 'react';
 import data from './data';
+import Cart from './Cart';
 
 function GroupExample () {
-    
+  
   return (
-    
-    <CardGroup>
+    <div>
+      <CardGroup>
       <Card>
         <Card.Img variant="top" src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600" />
         <Card.Body>
           <Card.Title>cloth</Card.Title>
           <Card.Text>
-            
+          
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -62,7 +63,9 @@ function GroupExample () {
         </Card.Footer>
       </Card>
     </CardGroup>
+    <Cart/>
+    </div>  
   );
+  
 }
-
 export default GroupExample;
