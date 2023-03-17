@@ -11,11 +11,11 @@ import Cart from './Cart';
 import Titlecart from './Titlecart';
 
 function GroupExample () {
-  
+
   return (
-    <div>
+    <div class="App">
       <Titlecart/>
-      <CardGroup>
+      <CardGroup >
       <Card>
         <Card.Img variant="top" src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600" />
         <Card.Body>
