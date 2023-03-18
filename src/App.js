@@ -2,11 +2,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-// import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import React from 'react';
-import data from './data';
 import Cart from './Cart';
 import Titlecart from './Titlecart';
 

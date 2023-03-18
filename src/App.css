@@ -7,11 +7,17 @@
 }
 
 .alls{
-  margin: 0 auto;
-  text-align: center;
-  font-size: 3rem;
+  text-align: left;
+  font-size: 2rem;
   color: gray;
-  padding-bottom: 1.2rem;
+
+}
+.shopping-cart-btn{
+  float: right;
+  padding: 0.95rem;
+}
+.btn-secondary{
+  margin-left: 2rem;
 }
 .datatable{
  padding: 2rem;
