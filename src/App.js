@@ -7,6 +7,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import React from 'react';
 import Cart from './Cart';
 import Titlecart from './Titlecart';
+import data from './data';
+
 
 function GroupExample () {
 
@@ -14,54 +16,22 @@ function GroupExample () {
     <div class="App">
       <Titlecart/>
       <CardGroup >
-      <Card>
+        {
+          data.productData.map((d)=><>
+           <Card>
         <Card.Img variant="top" src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600" />
         <Card.Body>
-          <Card.Title>cloth</Card.Title>
+          <Card.Title>{d.title}</Card.Title>
           <Card.Text>
-          
+          {d.price}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
         <a href=""><button>+Add To Cart</button></a>
         </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600" />
-        <Card.Body>
-          <Card.Title>cloth</Card.Title>
-          <Card.Text>
-            $50
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-        <a href=""><button>+Add To Cart</button></a>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600" />
-        <Card.Body>
-          <Card.Title>cloth</Card.Title>
-          <Card.Text>
-           $40
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-        <a href=""><button>+Add To Cart</button></a>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600" />
-        <Card.Body>
-          <Card.Title>cloth</Card.Title>
-          <Card.Text>
-            $50
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-        <a href=""><button>+Add To Cart</button></a>
-        </Card.Footer>
-      </Card>
+      </Card></>)
+        }
+
     </CardGroup>
     <Cart/>
     </div>  

@@ -1,8 +1,8 @@
-import {React,useState} from 'react';
+import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { AiOutlinePlus ,AiOutlineMinus} from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
-
+import data from './data';
 
 function StripedRowExample()  {
   
@@ -16,9 +16,10 @@ function StripedRowExample()  {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>2</td>
-          <td>Jacob</td>
+        {data.productData.map((d) => <>
+          <tr>
+          <td>{d.title}</td>
+          <td>{d.price}</td>
           <td>
             <Button variant="secondary" size ="sm">
               <AiOutlinePlus size={15} />
@@ -29,6 +30,10 @@ function StripedRowExample()  {
             </Button>
           </td>
         </tr>
+        </>
+        )
+        }
+        
       </tbody>
     </Table>
 
