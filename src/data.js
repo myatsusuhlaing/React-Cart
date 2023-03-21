@@ -4,19 +4,22 @@ const data = {
             id:1,
             title:'cloth1',
             desc:'',
-            price: '$40'
+            price: '$40',
+            qty: ''
         },
         {
             id:2,
             title:'cloth2',
             desc:'',
-            price: '$30'
+            price: '$30',
+            qty: ''
         },
         {
             id:3,
             title:'cloth3',
             desc:'',
-            price: '$50'
+            price: '$50',
+            qty: ''
         },
     ],
 };

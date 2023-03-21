@@ -1,6 +1,6 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-import Counter from './counter'
+import Counter from './counter';
 import data from './data';
 
 
