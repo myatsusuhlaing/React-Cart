@@ -1,8 +1,8 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-import { AiOutlinePlus ,AiOutlineMinus} from "react-icons/ai";
-import Button from 'react-bootstrap/Button';
+import Counter from './counter'
 import data from './data';
+
 
 function StripedRowExample()  {
   
@@ -21,19 +21,12 @@ function StripedRowExample()  {
           <td>{d.title}</td>
           <td>{d.price}</td>
           <td>
-            <Button variant="secondary" size ="sm">
-              <AiOutlinePlus size={15} />
-            </Button>
-            <span>{}</span>
-            <Button variant="secondary" size ="sm">
-              <AiOutlineMinus size={15} />
-            </Button>
+            <Counter/>
           </td>
         </tr>
         </>
         )
         }
-        
       </tbody>
     </Table>
 

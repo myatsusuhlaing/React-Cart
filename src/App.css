@@ -2,10 +2,6 @@
   text-align: center;
   padding:2rem;
 }
-.wrapper{
-  background-color: black;
-}
-
 .alls{
   text-align: left;
   font-size: 2rem;
@@ -17,8 +13,11 @@
   padding: 0.95rem;
 }
 .btn-secondary{
-  margin-left: 2rem;
+  margin-left: 0rem;
 }
 .datatable{
  padding: 2rem;
+}
+.countNum{
+  padding: 0rem 1rem 0rem 1rem;
 }
