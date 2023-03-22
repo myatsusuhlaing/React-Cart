@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { React,useState } from "react";
 import Button from 'react-bootstrap/Button';
 
-const AddToCartBtn  = () => {
+const AddToCartBtn  = ({number,setNumber}) => {
 
-    const [number, setNumber] = useState(1);
+    // const [number, setNumber] = useState(0);
 
-    const handleClick = () => {
+    // const handleClick = () => {
         
-    }
+    // }
 
     return (
         
             /* <button onClick={() => handleClick()}>{number}</button> */
-            <Button className="addtocart" variant="secondary" size="sm">+Add To Cart</Button>
+            <Button onClick={() => (setNumber(number + 1))} className="addtocart" variant="secondary" size="sm">+Add To Cart</Button>
         
     )
 }

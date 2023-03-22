@@ -15,10 +15,10 @@ import Counter from './counter';
 function GroupExample () {
 
 // const [count, setCount] = useState(0)
-
+const [number,setNumber] =useState(0);
   return (
     <div class="App">
-    <Titlecart/>
+    <Titlecart number={number}/>
       <CardGroup >
         {
           data.productData.map((d)=><>
@@ -31,7 +31,7 @@ function GroupExample () {
           </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <AddToCart /> <Counter/>
+            <AddToCart number={number} setNumber={setNumber}/> <Counter/>
             {/* <Counter count={count} setCount={setCount} /> */}
           </Card.Footer>
           </Card></>)
