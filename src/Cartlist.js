@@ -2,12 +2,15 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import Counter from './counter';
 import data from './data';
+import Titlecart from './Titlecart';
 
 
 function StripedRowExample()  {
   
   return (
-    <Table striped hover size="sm"> 
+    <>
+    <Titlecart/>
+    <Table className='cartlist-tb' striped hover size="sm"> 
       <thead>
         <tr>
           <th>Item</th>
@@ -29,8 +32,7 @@ function StripedRowExample()  {
         }
       </tbody>
     </Table>
-
-  ); 
-  
+    </>
+  );  
 }
 export default StripedRowExample;

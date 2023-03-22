@@ -3,10 +3,11 @@
   padding:2rem;
 }
 .alls{
-  text-align: left;
+  float: left;
   font-size: 2rem;
   color: gray;
-
+  text-decoration: none;
+  
 }
 .shopping-cart-btn{
   float: right;
@@ -20,4 +21,9 @@
 }
 .countNum{
   padding: 0rem 1rem 0rem 1rem;
+}
+.cartlist-tb{
+  text-align: center;
+  padding:2rem;
+  margin: 0 auto;
 }

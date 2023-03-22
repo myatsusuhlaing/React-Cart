@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 // const Counter = ({ count, setCount }) => {
     const Counter =() =>{
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
     return (
         <>
             <Button onClick={() => (setCount(count + 1))} variant="secondary" size="sm">
@@ -12,7 +12,7 @@ import Button from 'react-bootstrap/Button';
             </Button>
             <span className='countNum'>{count}</span>
 
-            <Button onClick={() => (setCount(count - 1))} disabled={count === 0} variant="secondary" size="sm">
+            <Button onClick={() => (setCount(count - 1))} disabled={count === 1} variant="secondary" size="sm">
                 <AiOutlineMinus size={15} />
             </Button>
         </>

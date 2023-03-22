@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import React, { useState } from 'react';
-import Cartlist from './Cartlist';
+// import Cartlist from './Cartlist';
 import Titlecart from './Titlecart';
 import AddToCart from './AddToCartBtn';
 import data from './data';
@@ -14,7 +14,7 @@ import Counter from './counter';
 
 function GroupExample () {
 
-const [count, setCount] = useState(0)
+// const [count, setCount] = useState(0)
 
   return (
     <div class="App">
@@ -37,7 +37,7 @@ const [count, setCount] = useState(0)
           </Card></>)
         }
       </CardGroup>
-    <Cartlist/>
+    {/* <Cartlist/> */}
     </div>  
   );
 }
