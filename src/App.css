@@ -27,3 +27,10 @@
   padding:2rem;
   margin: 0 auto;
 }
+.noitems{
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(189, 189, 189);
+  padding: 7rem 0rem 0rem 0rem;
+
+}
