@@ -5,14 +5,17 @@ import Home from './App';
 import reportWebVitals from './reportWebVitals';
 import Cartlist from './Cartlist';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CardContent from './content/CartContent';
 
 export default function App(){
   return(
     <BrowserRouter>
+      <CardContent>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path='cartlist' element={<Cartlist />} />
         </Routes>
+      </CardContent>
     </BrowserRouter>
   );
 }

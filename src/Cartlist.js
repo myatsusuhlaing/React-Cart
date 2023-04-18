@@ -3,13 +3,15 @@ import Table from 'react-bootstrap/Table';
 import Counter from './counter';
 import data from './data';
 import Titlecart from './Titlecart';
+import { CardContext } from './content/CartContent';
 
 function StripedRowExample()  {
-  const [isItem,noItem] = useState(false);
+  // const [cartData] = useContext(CardContext);
+  const isCardData = this.state.isCardData;
   return (
     <>
     <Titlecart/>
-    {isItem ? 
+    {isCardData ?
     <Table className='cartlist-tb' striped hover size="sm">
     <thead>
       <tr>
@@ -31,7 +33,7 @@ function StripedRowExample()  {
       )
       }
     </tbody>
-  </Table>:<div className='noitems'> No Item Choose </div>}
+  </Table> : <div className='noitems'>No Items</div>}
     </>
   );  
 }

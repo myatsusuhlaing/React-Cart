@@ -3,15 +3,15 @@ import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
 
 // const Counter = ({ count, setCount }) => {
-    const Counter =() =>{
-    const [count, setCount] = useState(1);
+    const Counter =({qty, setQty}) =>{
+
     return (
         <>
-            <Button onClick={() => (setCount(count + 1))} variant="secondary" size="sm">
+            <Button onClick={() => (setQty(qty + 1))} variant="secondary" size="sm">
                 <AiOutlinePlus size={15} />
             </Button>
-            <span className='countNum'>{count}</span>
-            <Button onClick={() => (setCount(count - 1))} disabled={count === 1} variant="secondary" size="sm">
+            <span className='countNum'>{qty}</span>
+            <Button onClick={() => (setQty(qty - 1))} disabled={qty === 1} variant="secondary" size="sm">
                 <AiOutlineMinus size={15} />
             </Button>
         </>

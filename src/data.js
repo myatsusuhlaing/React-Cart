@@ -5,21 +5,21 @@ const data = {
             title:'cloth1',
             desc:'',
             price: '$40',
-            qty: ''
+            qty: 1
         },
         {
             id:2,
             title:'cloth2',
             desc:'',
             price: '$30',
-            qty: ''
+            qty: 1
         },
         {
             id:3,
             title:'cloth3',
             desc:'',
             price: '$50',
-            qty: ''
+            qty: 1
         },
     ],
 };

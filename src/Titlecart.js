@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import { AiFillShopping } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
+import { CardContext } from './content/CartContent';
 
 
 function ContainerExample({number}) {
+  const [cartData] = useContext(CardContext);
+  console.log(cartData)
 
   return (
     <Container>
